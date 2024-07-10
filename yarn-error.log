@@ -1,0 +1,97 @@
+Arguments: 
+  /home/william/.nvm/versions/node/v18.17.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /home/william/.local/share/solana/install/active_release/bin:/home/william/bin:/home/william/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/remote-cli:/home/william/.local/share/solana/install/active_release/bin:/home/linuxbrew/.linuxbrew/opt/php@8.0/bin:/home/linuxbrew/.linuxbrew/opt/php@8.0/bin:/home/linuxbrew/.linuxbrew/opt/php@8.0/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/opt/node@14/bin:/home/linuxbrew/.linuxbrew/opt/php@8.0/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/william/.local/bin:/home/william/bin:/home/william/.local/share/solana/install/active_release/bin:/home/william/.cargo/bin:/home/william/bin:/home/william/.nvm/versions/node/v18.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/william/.foundry/bin:/home/william/.foundry/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at Url.parse (node:url:445:17)
+      at urlParse (node:url:167:13)
+      at Function.isVersion (/usr/local/lib/node_modules/yarn/lib/cli.js:37204:21)
+      at getExoticResolver (/usr/local/lib/node_modules/yarn/lib/cli.js:29718:18)
+      at PackageRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:36566:76)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+npm manifest: 
+  {
+    "name": "primestaked-ui",
+    "private": true,
+    "sideEffects": false,
+    "type": "module",
+    "scripts": {
+      "postinstall": "npm run typegen",
+      "dev": "remix vite:dev",
+      "build": "remix vite:build",
+      "start": "wrangler pages dev ./build/client",
+      "deploy": "wrangler pages deploy ./build/client",
+      "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+      "typecheck": "tsc",
+      "typegen": "wrangler types"
+    },
+    "dependencies": {
+      "@floating-ui/react": "^0.26.9",
+      "@rainbow-me/rainbowkit": "^2.0.1",
+      "@react-spring/web": "^9.7.3",
+      "@remix-run/cloudflare": "^2.8.1",
+      "@remix-run/cloudflare-pages": "^2.8.1",
+      "@remix-run/css-bundle": "^2.8.1",
+      "@remix-run/react": "^2.8.1",
+      "@remix-run/serve": "^2.8.1",
+      "@sentry/remix": "^7.106.0",
+      "@tanstack/react-query": "^5.26.3",
+      "isbot": "^5.1.1",
+      "react": "^18.2.0",
+      "react-bootstrap": "^2.4.0",
+      "react-dom": "^18.2.0",
+      "styled-components": "5.2.1",
+      "viem": "^2.7.22",
+      "wagmi": "^2.5.7",
+      "web3": "^4.9.0"
+    },
+    "devDependencies": {
+      "@cloudflare/workers-types": "^4.20240222.0",
+      "@headlessui/react": "^1.7.18",
+      "@react-hookz/web": "^24.0.4",
+      "@remix-run/dev": "^2.8.1",
+      "@types/react": "^18.2.64",
+      "@types/react-dom": "^18.2.21",
+      "@types/styled-components": "^5.1.34",
+      "@typescript-eslint/eslint-plugin": "^7.1.1",
+      "axios": "^1.6.7",
+      "eslint": "^8.57.0",
+      "eslint-config-prettier": "^9.1.0",
+      "eslint-import-resolver-typescript": "^3.6.1",
+      "eslint-plugin-import": "^2.29.1",
+      "eslint-plugin-jsx-a11y": "^6.8.0",
+      "eslint-plugin-react": "^7.34.0",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "react-time-sync": "^5.2.1",
+      "tailwindcss": "^3.4.1",
+      "typescript": "^5.4.2",
+      "vite-tsconfig-paths": "^4.3.1",
+      "wrangler": "3.32.0"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
