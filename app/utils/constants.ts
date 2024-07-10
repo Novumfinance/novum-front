@@ -19,32 +19,32 @@ export interface Asset {
 
 export const assets = [
   { symbol: 'stETH', src: stEthSrc, name: 'Lido Staked ETH' },
-  {
-    symbol: 'ETH',
-    src: ethSrc,
-    name: 'Ether',
-  },
   // {
-  //   symbol: 'cbETH',
-  //   src: cbEthSrc,
-  //   name: 'Coinbase Staked Ether',
-  // },
-  // {
-  //   symbol: 'ETHx',
-  //   src: ethxSrc,
-  //   name: 'Stader ETHx',
-  // },
-  // {
-  //   symbol: 'rETH',
-  //   src: rEthSrc,
-  //   name: 'Rocket Pool ETH',
-  //   // tags: [
-  //   //   {
-  //   //     title: '1.1x Novum Points Boost',
-  //   //     color: 'red-outline',
-  //   //   },
-  //   // ],
-  // },
+    //   symbol: 'cbETH',
+    //   src: cbEthSrc,
+    //   name: 'Coinbase Staked Ether',
+    // },
+    {
+      symbol: 'ETHx',
+      src: ethxSrc,
+      name: 'Stader ETHx',
+    },
+    {
+      symbol: 'rETH',
+      src: rEthSrc,
+      name: 'Rocket Pool ETH',
+      // tags: [
+        //   {
+          //     title: '1.1x Novum Points Boost',
+          //     color: 'red-outline',
+          //   },
+          // ],
+    },
+    {
+      symbol: 'ETH',
+      src: ethSrc,
+      name: 'Ether',
+    },
 ] as Asset[]
 
 export const unstakableAssets = [
@@ -71,7 +71,7 @@ export const HOLESKY_RPC_URL = 'https://ethereum-holesky-rpc.publicnode.com'
 export const lrtOraclePriceMethod = 'novETHPrice'
 
 export const depositsEndDate = new Date()
-depositsEndDate.setUTCFullYear(2024, 6, 9)
+depositsEndDate.setUTCFullYear(2026, 6, 9)
 depositsEndDate.setUTCHours(19, 55, 0, 0)
 
 export const eigenWeekStart = new Date()
