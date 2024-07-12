@@ -49,6 +49,16 @@ export const assets = [
 
 export const unstakableAssets = [
   { symbol: 'stETH', src: stEthSrc, name: 'Lido Staked ETH' },
+  {
+    symbol: 'ETHx',
+    src: ethxSrc,
+    name: 'Stader ETHx',
+  },
+  {
+    symbol: 'rETH',
+    src: rEthSrc,
+    name: 'Rocket Pool ETH',
+  },
 ] as Asset[]
 
 // Ensure there is a contract address for each asset above
