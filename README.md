@@ -1,4 +1,4 @@
-# PrimeStakedEth
+# novEth
 
 ## How to get some stETH locally
 
